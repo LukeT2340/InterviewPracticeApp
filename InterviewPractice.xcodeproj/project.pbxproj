@@ -8,18 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		8C4AD4662B747F6400485C0D /* InterviewPracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4AD4652B747F6400485C0D /* InterviewPracticeApp.swift */; };
-		8C4AD4682B747F6400485C0D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4AD4672B747F6400485C0D /* ContentView.swift */; };
+		8C4AD4682B747F6400485C0D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4AD4672B747F6400485C0D /* MainView.swift */; };
 		8C4AD46A2B747F6600485C0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C4AD4692B747F6600485C0D /* Assets.xcassets */; };
 		8C4AD46E2B747F6600485C0D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C4AD46D2B747F6600485C0D /* Preview Assets.xcassets */; };
+		8C4AD4762B747FAD00485C0D /* GPTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4AD4752B747FAD00485C0D /* GPTManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8C4AD4622B747F6400485C0D /* InterviewPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterviewPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C4AD4652B747F6400485C0D /* InterviewPracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewPracticeApp.swift; sourceTree = "<group>"; };
-		8C4AD4672B747F6400485C0D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8C4AD4672B747F6400485C0D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		8C4AD4692B747F6600485C0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C4AD46B2B747F6600485C0D /* InterviewPractice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InterviewPractice.entitlements; sourceTree = "<group>"; };
 		8C4AD46D2B747F6600485C0D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8C4AD4752B747FAD00485C0D /* GPTManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +55,8 @@
 			isa = PBXGroup;
 			children = (
 				8C4AD4652B747F6400485C0D /* InterviewPracticeApp.swift */,
-				8C4AD4672B747F6400485C0D /* ContentView.swift */,
+				8C4AD4672B747F6400485C0D /* MainView.swift */,
+				8C4AD4742B747F9F00485C0D /* Classes */,
 				8C4AD4692B747F6600485C0D /* Assets.xcassets */,
 				8C4AD46B2B747F6600485C0D /* InterviewPractice.entitlements */,
 				8C4AD46C2B747F6600485C0D /* Preview Content */,
@@ -67,6 +70,14 @@
 				8C4AD46D2B747F6600485C0D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8C4AD4742B747F9F00485C0D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8C4AD4752B747FAD00485C0D /* GPTManager.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +150,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C4AD4682B747F6400485C0D /* ContentView.swift in Sources */,
+				8C4AD4682B747F6400485C0D /* MainView.swift in Sources */,
+				8C4AD4762B747FAD00485C0D /* GPTManager.swift in Sources */,
 				8C4AD4662B747F6400485C0D /* InterviewPracticeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,7 +299,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = EP.InterviewPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -325,7 +339,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = EP.InterviewPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
